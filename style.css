@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700;800;980&display=swap');
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ... Outros estilos gerais ... */
+
+/* Estilos para telas de tablets */
+@media screen and (max-width: 768px) {
+  /* Redefina estilos de elementos que podem não ficar bem em tablets */
+  .header-container {
+    padding: 10vh; /* Ajuste o espaçamento no cabeçalho para tablets */
+  }
+
+  .prt1, .prt3 {
+    padding: 15vh; /* Ajuste o espaçamento nas seções 1 e 3 para tablets */
+  }
+
+  .container333 {
+    flex-direction: column; /* Para garantir que os elementos do formulário fiquem empilhados em telas menores */
+  }
+
+  .circle1, .circle2 {
+    display: none; /* Oculte os círculos adicionados para telas maiores */
+  }
+
+  /* Adicione mais ajustes de estilo conforme necessário */
+}
+
+/* ... Outros estilos de tablets ... */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon {
+  display: flex; /* Permite que os itens dentro do contêiner flexível se comportem como elementos flexíveis */
+  gap: 30px; /* Define um espaço de 10 pixels entre os itens flexíveis (imagens) */
+}
+
+
+.icon .logo-instagram {
+  width: 30px; /* Define a largura da imagem do Instagram como 20 pixels */
+  height: 30px; /* Define a altura da imagem do Instagram como 20 pixels */
+}
+
+.icon .logo-f {
+  width: 30px; /* Define a largura da imagem do Instagram como 20 pixels */
+  height: 30px; /* Define a altura da imagem do Instagram como 20 pixels */
+}
+
+.icon .logo-youtube {
+  width: 30px; /* Define a largura da imagem do Instagram como 20 pixels */
+  height: 30px; /* Define a altura da imagem do Instagram como 20 pixels */
+}
+
+
+
+.btn:link,
+.btn:visited {
+  font-size: 24px; /* Tamanho maior para o botão */
+}
+
+/* O resto do seu CSS permanece o mesmo */
+
+/* ... Seu CSS existente ... */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(9, 173, 146, 0);
+  position: relative; /* Defina a posição como relativa para que os elementos se sobreponham ao gradiente */
+  z-index: 1; /* Defina uma pilha de z-index para garantir que fiquem acima do gradiente */
+}
+
+/* O resto do seu CSS permanece o mesmo */
+
+
+
+
+.parent-link, .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 60px;
+  
+}
+.logo:hover {
+  opacity: 0.7;
+}
+
+.social-links, .sm-icon {
+  text-decoration: none;
+}
+
+.social-links {
+  padding: 0 2.5rem;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.social-links:hover {
+  opacity: 0.8;
+}
+
+.sm-icon {
+  padding: 0 0.5rem;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.sm-icon:hover {
+  opacity: 0.8;
+}
+
+
+
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  color: #EAF8FF;
+  font-weight: 600;
+  background-color: rgb(199, 0, 0);
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 25px;
+  display: inline-block;
+  
+}
+
+.btn:link:hover,
+.btn:visited:hover {
+  opacity: 0.8;
+}
+
+
+
+.header-container {
+  position: relative;
+  width: 100%;
+  top: 6%;
+  transform: translateY(-84%);
+  padding-left: 3rem;
+  padding: 20vh;
+  margin-top: 0;
+  box-shadow: 0px 10px 90px 40px #6f00ff;
+  background: linear-gradient(to bottom, #6f00ff,rgba(113, 9, 173, 0.623)); /* Replace these colors with your preferred blue and purple shades */
+}
+
+
+.bottom-text {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: fixed;
+  
+ 
+bottom: -45px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px  /* Adiciona espaço acima e abaixo do texto */
+}
+
+
+/* Additional styles for the inner content */
+.hdr-container-inner {
+  background-color: rgba(0, 0, 0, 0.227); /* You can adjust the background color and opacity */
+  padding: 150px;
+  border-radius: 20px;
+  color: white;
+  margin-left: -10px;
+ 
+}
+
+/* Para alinhar o texto à esquerda */
+.left-align {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+/* Para aumentar o tamanho das letras */
+.left-align h1, .left-align p {
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-family: 'Trebuchet MS';
+   /* Tamanho maior para o título e o texto */
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilos para o topo */
+header {
+  background-color: #333; /* Cor de fundo do topo */
+  color: #fff; /* Cor do texto no topo */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  padding: 10px 0; /* Espaçamento interno no topo */
+  
+}
+
+
+
+
+/* Estilos para o contêiner do card */
+
+body {
+  background: #3d0585;
+   z-index: 1;
+   background-image: url('setas-mundosenai-anim[103155].svg');
+   background-size: cover; 
+
+}
+
+
+
+
+
+.prt1 {
+  position: relative;
+  width: 100%;
+  top: 8%;
+  transform: translateY(-22%);
+  padding-left: 3rem;
+  padding: 22vh;
+  margin-top: 0;
+  box-shadow:  0px 10px 8000px 300px #6f00ffb2;
+  background: linear-gradient(to bottom, rgb(113, 9, 173), #6f00ffb2); 
+}
+.prt1 {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos no espaço disponível */
+  align-items: flex-start; /* Alinha os elementos verticalmente no topo */
+}
+
+.texto {
+  flex: 1; /* A div de texto ocupa o espaço restante */
+  padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.texto p, .texto h1 {
+  margin: 0; /* Remove margens padrão para evitar espaçamento adicional */
+  padding-bottom: 13px; /* Espaçamento de 13px entre o parágrafo e o título */
+}
+
+.imagem {
+  max-width: 80%; /* Largura máxima da imagem */
+  
+  
+}
+
+.p1{
+  color: white; /* Define a cor do texto para branco */
+  text-align: left; /* Alinha o texto à esquerda */
+  font-size: 29px; /* Define o tamanho do texto */
+  margin-left: 40px; /* Move o texto um pouco para a direita */
+  margin-bottom: 50px; /* Espaçamento entre as frases */
+  line-height: 1.8; /* Espaçamento entre linhas para uma aparência mais bonita */
+  border: #2F86D6;
+  padding: 50px  30px;
+ 
+}
+.hh1 {
+
+  font-size: 20px; 
+  color: white; /* Define a cor do texto para branco */
+  text-align: left; /* Alinha o texto à esquerda */
+  font-size: 43px; /* Define o tamanho do texto */
+  margin-left: 40px; /* Move o texto um pouco para a direita */
+  margin-bottom: 50px; /* Espaçamento entre as frases */
+  line-height: 1.8; /* Espaçamento entre linhas para uma aparência mais bonita */
+  border: #2F86D6;
+  padding: 50px  30px ;
+}
+
+
+
+.prt3 {
+  position: relative;
+  width: 100%;
+  top: 8%;
+  transform: translateY(-80%);
+  padding-left: 3rem;
+  padding: 22vh;
+  margin-top: 0;
+  box-shadow:  0px 10px 8000px 300px #6f00ff00;
+  background: linear-gradient(to bottom, rgba(151, 44, 212, 0), #6f00ff); 
+}
+.prt3 {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos no espaço disponível */
+  align-items: flex-start; /* Alinha os elementos verticalmente no topo */
+}
+
+.texto {
+  flex: 1; /* A div de texto ocupa o espaço restante */
+  padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.texto p, .texto h1 {
+  margin: 0; /* Remove margens padrão para evitar espaçamento adicional */
+  padding-bottom: 13px; /* Espaçamento de 13px entre o parágrafo e o título */
+}
+
+.imagem {
+  max-width: 70%; /* Largura máxima da imagem */
+  margin-top: 6px;
+
+  
+  
+  
+}
+
+
+.p3{
+  color: white; /* Define a cor do texto para branco */
+  text-align: left; /* Alinha o texto à esquerda */
+  font-size: 29px; /* Define o tamanho do texto */
+  margin-left: 40px; /* Move o texto um pouco para a direita */
+  margin-bottom: 10px; /* Espaçamento entre as frases */
+  line-height: 1.8; /* Espaçamento entre linhas para uma aparência mais bonita */
+  border: #2F86D6;
+  padding: 20px  30px;
+ 
+}
+.hh3 {
+
+  font-size: 20px; 
+  color: white; /* Define a cor do texto para branco */
+  text-align: left; /* Alinha o texto à esquerda */
+  font-size: 43px; /* Define o tamanho do texto */
+  margin-left: 40px; /* Move o texto um pouco para a direita */
+  margin-bottom: 10px; /* Espaçamento entre as frases */
+  line-height: 1.8; /* Espaçamento entre linhas para uma aparência mais bonita */
+  border: #2F86D6;
+  padding: 20px  30px ;
+}
+
+
+
+
+
+
+
+
+
+.secao {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 8%;
+  transform: translateY(10%);
+  padding-left: 0rem;
+  padding: 7vh;
+  margin-top: 0;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #6b63ff8a, #cc00ff6b);
+  box-shadow: 0px 20px 20px #000000ce;
+}
+
+.p222 {
+  text-align: left;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: white; 
+  font-size: 23px;
+  margin-left: 130PX;
+  margin-top: 10PX;
+ 
+}
+
+.h222 {
+  text-align: left;
+  font-family: sans-serif;
+  line-height: 2.6;
+  color: white;
+  font-size: 40px; 
+  margin-left: 130PX;
+  margin-top: 22PX;
+ 
+ 
+}
+
+
+
+
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  width: 0%;
+  top: 8%;
+  transform: translateY(-70%);
+  padding-left: 3rem;
+  padding: 22vh;
+  margin-top: 0;
+  left: 40px;
+}
+
+.cards .red {
+  background-color: #933ff4;
+}
+
+.cards .white {
+  background-color: #780096;
+  color: black;
+}
+
+.cards .blue {
+  background-color: #3b22c5;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 400ms;
+  right: 200PX;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 1em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.prt4 {
+  position: relative;
+  width: 100%;
+  top: 8%;
+  transform: translateY(-54%);
+  padding-left: 3rem;
+  padding: 22vh;
+  margin-top: 0;
+  box-shadow:  0px 10px 8000px 300px #6f00ffb2;
+  background: linear-gradient(to bottom, rgb(104, 10, 141), #6f00ffb2); 
+}
+
+
+
+
+
+.card-container333 {
+  width: 350px;
+  height: 44px;
+  left: 760px;
+  background: transparent;
+  position: absolute;
+  right: 0;
+ 
+}
+
+
+.container333 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #2879f3;
+  position: absolute;
+  top: 190px;
+  left: -160px;
+}
+
+.circle2 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #f37e10;
+  position: absolute;
+  right: -180px;
+  bottom: 220px;
+}
+
+.log-card333 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  width: 500px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(50px);
+  padding: 50px;
+}
+
+.heading333 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.para {
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+
+.p444 {
+
+  color: #ffffff;
+}
+
+
+.text333 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.input-group {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.input333 {
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  width: 100%;
+  border: none;
+  padding: 8px 16px;
+  background-color: transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  font-weight: 600;
+  color: #2879f3;
+}
+
+.input333:hover {
+  color: #2879f3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.password-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forget-password {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2879f3;
+  text-decoration: none;
+}
+
+.forget-password:hover {
+  text-decoration: underline;
+  color: #f37e10;
+}
+
+.btn333 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #2879f3;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btn333:hover {
+  background-color: #0653c7;
+}
+
+.no-account {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.link333 {
+  font-weight: 800;
+  color: #0066ff;
+}
+
+.link333:hover {
+  color: #f37e10;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
